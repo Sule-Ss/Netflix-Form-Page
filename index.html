@@ -5,81 +5,120 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NETFLIX</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy:ital@1&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+
+
+    <link rel="stylesheet" href="style.css">
+
+
 </head>
 
 <body>
 
-    <header>
-        <h1><span style="color: red;">NET</span><span>FLIX</span></h1>
-        <p>Thank you for signing up at Netflix. Tell us more about yourself</p>
-    </header>
+    <div id="container">
 
-    <form action="#">
+        <header id="header">
 
-        <main>
-            <nav><label for="name">Name</label></nav>
-            <nav>
-                <input type="text" id="name" placeholder="Enter your name">
-            </nav>
+            <h1 id="title">NET<span>FLIX</span></h1>
+            <h3 id="description">Thank you for signing up to Netflix. Tell me about yourself</h3>
 
-            <nav><label for="age">Age</label></nav>
-            <nav>
-                <input type="number" name="" id="age" placeholder="Age">
-            </nav>
+        </header>
 
-            <nav><label for="email">Email</label></nav>
-            <nav>
-                <input type="email" id="age" placeholder="Enter your email">
-            </nav>
+        <section id="servey-form-conteiner">
+            <form action="result.htnl" method="get">
 
-            <nav><label for="content">Content type</label></nav>
-            <nav>
-                <select name="content" id="content">
-                    <option value="series">Series</option>
-                    <option value="movie">Movie</option>
-                </select>
-            </nav>
+                <div class="input-box">
 
-            <nav>
-                <nav><label>Movie type</label></nav>
-                <input type="checkbox" name="action" id="Action">
-                <label for="Action">Action</label><br>
-                <input type="checkbox" name="comedy" id="Comedy">
-                <label for="Comedy">Comedy</label><br>
-                <input type="checkbox" name="dram" id="Dram">
-                <label for="Dram">Dram</label>
-            </nav>
+                    <label for="name">Name</label>
+                    <br>
+                    <input type="text" name="name" id="name" placeholder="Enter your name" required>
 
-            <nav>
-                <nav><label for="gender">Gender</label></nav>
+                </div>
 
-                <input type="radio" name="gender-name" id="male">
-                <label for="male">Male</label> <br>
+                <div class="input-box">
 
-                <input type="radio" name="gender-name" id="female">
-                <label for="female">Female</label> <br>
+                    <label for="age">Age</label>
+                    <br>
+                    <input type="number" name="age" id="age" placeholder="Age" required>
 
-                <input type="radio" name="gender-name" id="other">
-                <label for="other">Other</label><br>
-            </nav>
+                </div>
+
+                <div class="input-box">
+
+                    <label for="email">Email</label>
+                    <br>
+                    <input type="email" name="email" id="email" placeholder="Enter your email" required>
+
+                </div>
+
+                <div class="input-box">
+                    <label for="content">Content Type</label>
+                    <br>
+
+                    <select name="content" id="dropdown">
+                        <option value="movie">Movie</option>
+                        <option value="series" selected>Series</option>
+                    </select>
+                </div>
+
+                <div class="input-box">
+                    <label for="">Movie Type</label>
+                    <br>
+                    <input type="checkbox" name="movie" id="first-check" value="Comedy" checked>
+                    <label for="first-check">Comedy</label>
+                    <br>
+
+                    <input type="checkbox" name="movie" id="second-check" value="Action">
+                    <label for="second-check">Action</label>
+                    <br>
+
+                    <input type="checkbox" name="movie" id="third-check" value="Romance" checked>
+                    <label for="third-check">Romance</label>
+                </div>
+
+                <div class="input-box">
+                    <label for="">Gender</label>
+                    <br>
+                    <input type="radio" name="gender" id="first-radio" value="Male">
+                    <label for="first-radio">Male</label>
+                    <br>
+
+                    <input type="radio" name="gender" id="second-radio" value="Female" checked>
+                    <label for="second-radio">Female</label>
+                    <br>
+
+                    <input type="radio" name="gender" id="third-radio" value="Other">
+                    <label for="third-radio">Other</label>
+
+                </div>
+
+                <div class="input-box">
+                    <label for="feedback">Feedback</label>
+                    <br>
+                    <textarea name="feedback" id="feedback" cols="30" rows="10" placeholder="any comment"></textarea>
+                </div>
+
+                <div class="form-submit">
+                    <button type="submit" id="form-button">Send</button>
+                </div>
+
+            </form>
+        </section>
 
 
-            <nav><label for="feedback">Feed back</label> </nav>
-            <nav>
-                <textarea name="" id="" cols="32" rows="5" style="resize: none;"></textarea>
-            </nav>
-
-        </main>
-
-        <footer>
-            <input type="submit" value="Submit" id="foot">
-        </footer>
 
 
-    </form>
+    </div>
+
+
 </body>
 
 </html>
